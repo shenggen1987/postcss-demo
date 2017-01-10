@@ -1,0 +1,15 @@
+$primaryBackColor: #0047AB;
+$primaryTextColor: #FFF;
+$contentBackColor: #FFF0E0;
+
+body {
+  font-family: Monaco;
+  width: 640px;
+  margin: auto;
+}
+.header {
+  background-color: $primaryBackColor;
+  color: $primaryTextColor;
+  padding: 20px;
+  font-size: 1.5em;
+}
