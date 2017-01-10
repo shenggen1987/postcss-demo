@@ -1,6 +1,7 @@
 $primaryBackColor: #0047AB;
 $primaryTextColor: #FFF;
 $contentBackColor: #FFF0E0;
+@import 'reset';
 
 body {
   font-family: Monaco;
@@ -12,4 +13,26 @@ body {
   color: $primaryTextColor;
   padding: 20px;
   font-size: 1.5em;
+}
+.row{
+	.col-fast{
+		font-size: 2em;
+	}
+}
+
+@define-mixin box-sizing $sizing {
+  box-sizing:$sizing;
+}
+.box-border{
+    border:1px solid #ccc;
+    @mixin box-sizing border-box;
+}
+:fullscreen a {
+    display: flex
+}
+a {
+    border-radius: 5px;
+}
+a {
+    transform: scale(0.5);
 }
