@@ -1,11 +1,32 @@
 
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-<meta charset="utf-8">
-<title>fullPage.js制作网易邮箱6.0介绍页面演示_jQuery插件库</title>
-<link href="//cdn.bootcss.com/fullPage.js/2.8.1/jquery.fullPage.min.css" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv=X-UA-Compatible content="IE=Edge">
+    <title>李盛根的个人简历</title>
+    <link href="//cdn.bootcss.com/fullPage.js/2.8.1/jquery.fullPage.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript">
+         var calculate_size = function() {
+            var BASE_FONT_SIZE = 100,
+                docEl = document.documentElement,
+                clientWidth = docEl.clientWidth;
+            if (clientWidth) {
+                docEl.style.fontSize = BASE_FONT_SIZE * (clientWidth / 750) + 'px';
+            }
+        };
+        // Abort if browser does not support addEventListener
+        if (document.addEventListener) {
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            window.addEventListener(resizeEvt, calculate_size, false);
+            document.addEventListener('DOMContentLoaded', calculate_size, false);
+            calculate_size();
+        }
+
+    </script>
 </head>
 <body>
 
