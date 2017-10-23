@@ -5,3 +5,10 @@ p{
   line-height: 30px; 
 }
 a { color: #fff;}
+.item{
+  padding: 0 10px;
+  text-align: left;
+}
+.f14{
+  font-size: 14px;
+}
